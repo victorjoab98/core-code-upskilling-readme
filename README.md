@@ -5,9 +5,9 @@
 
 #### 1. Smallest Integer In Array 
 ```js
-function ensureQuestion(s) { 
-  return s.endsWith('?') 
-    ? s 
-    : s + '?'
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return args.reduce((a,b)=>Math.min(a,b))
+  }
 }
 ```
